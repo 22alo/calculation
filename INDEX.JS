@@ -89,9 +89,6 @@ app.get('/random', (req, res) => {
   res.json({ min, max, randomNum });
 });
 
-
-
-
 // Not found route
 app.use((req, res) => {
   res.status(404).send('Route not found');
