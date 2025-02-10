@@ -14,6 +14,8 @@ app.get('/', (req, res) => {
 app.post('/calculate', (req, res) => {
   const { num1, num2, operation } = req.body;
 
+
+
   // Validate input
   if (num1 === undefined || num2 === undefined || !operation) {
     return res.status(400).json({ error: 'num1, num2, and operation are required.' });
