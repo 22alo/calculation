@@ -5,6 +5,8 @@ const PORT = 3000;
 // Middleware to parse JSON requests
 app.use(express.json());
 
+
+
 // Welcome route
 app.get('/', (req, res) => {
   res.send('Welcome to the Calculation Service! Use the /calculate endpoint for operations.');
